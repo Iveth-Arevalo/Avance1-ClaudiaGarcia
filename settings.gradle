@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Claudia_CRUD_2020"

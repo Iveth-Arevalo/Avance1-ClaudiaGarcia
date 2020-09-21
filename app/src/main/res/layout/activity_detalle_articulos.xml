@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#131212"
+    tools:context=".DetalleArticulos">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resultado Encontrado"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:drawableStart="@drawable/ic_search1"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Código"
+                android:textSize="19dp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_codigo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="xxxxx"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Descripción"
+                android:textSize="19dp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_descripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="xxxxx"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Precio"
+                android:textSize="19dp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_precio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="00.00"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                />
+
+            <androidx.cardview.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardElevation="4dp"
+                card_view:cardCornerRadius="4dp"
+                android:layout_margin="6dp">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="6dp"
+                    android:background="#009688"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="0dp"
+                        android:background="#009688">
+
+                        <TextView
+                            android:id="@+id/tvInformld"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Resultado por busqueda"
+                            android:textColor="#fff"
+                            android:textSize="19dp"
+                            android:textStyle="bold"
+                            android:drawableStart="@drawable/ic_search1"
+                            android:padding="5dp"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvUserName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textAppearance="@android:style/TextAppearance"
+                        android:text="Código:"
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        android:layout_marginTop="25dp"
+                        android:textSize="19dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_codigo1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="xxxxx"
+                        android:textColor="#000"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+                    <TextView
+                        android:id="@+id/tvUserName1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textAppearance="@android:style/TextAppearance"
+                        android:text="Descripción"
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        android:textSize="19dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_descripcion1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="xxxxx"
+                        android:textColor="#000"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvUserName2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textAppearance="@android:style/TextAppearance"
+                        android:text="Precio"
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        android:textSize="19dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_precio1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="xxxxx"
+                        android:textColor="#000"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_fecha"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="Fecha de creación"
+                        android:textSize="19dp"
+                        android:layout_marginTop="20dp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnGoToReports"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                            android:layout_weight="1"
+                            android:text="Ver reportes"
+                            android:textColor="#fff"
+                            android:textStyle="bold"
+                            android:textSize="16dp"/>
+
+                        <Button
+                            android:id="@+id/btnEditInform"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                            android:layout_weight="1"
+                            android:text="Editar Informe"
+                            android:textColor="#fff"
+                            android:textStyle="bold"
+                            android:textSize="16dp"/>
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>
