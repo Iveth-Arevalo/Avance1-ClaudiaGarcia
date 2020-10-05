@@ -9,14 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DetalleArticulos"></activity>
-        <activity android:name=".ListViewArticulos" />
-        <activity android:name=".ConsultaSpinner" />
-        <activity android:name=".ventana1" />
 
-        <meta-data
-            android:name="com.google.android.actions"
-            android:resource="@xml/ventana1" />
+        <activity android:name=".modal_Toast_Custom"></activity>
+        <activity android:name=".consulta_recyclerView" />
+        <activity android:name=".ListViewArticulos" />
+        <activity android:name=".DetalleArticulos" />
+        <activity android:name=".ConsultaSpinner" />
 
         <activity
             android:name=".MainActivity"
